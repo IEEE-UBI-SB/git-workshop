@@ -43,10 +43,7 @@ called `git-workshop`. This is your `working directory`
 
     $ cd git-workshop
     $ ls
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Help-browser.svg/20px-Help-browser.svg.png)
-Stuck? Ask for help from the workshop staff
-
+    
 For the curious, you should also see the `.git` subdirectory. This is
 where all your repository’s data and history is kept.
 
@@ -85,9 +82,6 @@ to go with the commit at the same time.
 
     $ git commit -m "I am adding two new files"
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Help-browser.svg/20px-Help-browser.svg.png)
-Stuck? Ask for help from the workshop staff
-
 Let’s see what just happened
 ----------------------------
 
@@ -123,9 +117,6 @@ You should see something similar to:
     new file mode 100644
     index 0000000..e69de29
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Help-browser.svg/20px-Help-browser.svg.png)
-Stuck? Ask for help from the workshop staff
-
 A necessary digression
 ----------------------
 
@@ -156,9 +147,6 @@ You should see something like the following:
     @@ -0,0 +1 @@
     +Lorem ipsum Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Help-browser.svg/20px-Help-browser.svg.png)
-Stuck? Ask for help from the workshop staff
-
 Staging area again
 ------------------
 
@@ -166,9 +154,6 @@ Now let’s add our modified file, `alice.txt` to the staging area. Do you
 remember how ?
 
 Next, check the `status` of `alice.txt`. Is it in the staging area now?
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Help-browser.svg/20px-Help-browser.svg.png)
-Stuck? Ask for help from the workshop staff
 
 Undoing
 -------
@@ -189,9 +174,6 @@ Here’s how to back out of the staging area :
 Compare the `git status` now to the git status from the previous
 section. How does it differ?
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Help-browser.svg/20px-Help-browser.svg.png)
-Stuck? Ask for help from the workshop staff
-
 Your staging area should now be empty. What’s happened to the Lorem
 Ipsum changes? It’s still there. We are now back to the state just
 before we added this file to staging area. Going back to the mail
@@ -209,9 +191,6 @@ To accomplish this, we use `git checkout`, like so:
     $ git checkout alice.txt
 
 You have now un-done your changes. Your file is now empty.
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Help-browser.svg/20px-Help-browser.svg.png)
-Stuck? Ask for help from the workshop staff
 
 Branching
 ---------
@@ -262,9 +241,6 @@ Now, let’s compare them to the master branch. Use `git diff`
 Basically what the above output says is that `test.txt` is present on
 the `exp1` branch, but is absent on the `master` branch.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Help-browser.svg/20px-Help-browser.svg.png)
-Stuck? Ask for help from the workshop staff
-
 Now you see me, now you don’t
 -----------------------------
 
@@ -285,9 +261,6 @@ when you switch back to that branch.
 
 Now, switch back to the exp1 branch, and check that the `test.txt` is
 now present.
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Help-browser.svg/20px-Help-browser.svg.png)
-Stuck? Ask for help from the workshop staff
 
 Merging
 -------
@@ -340,9 +313,6 @@ the code below to set it up (don’t worry if you can’t understand it)
 You should now have a new branch called `alpher`. Try merging that
 branch into `master` now and fix the ensuing conflict.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Help-browser.svg/20px-Help-browser.svg.png)
-Stuck? Ask for help from the workshop staff
-
 Fixing a conflict
 -----------------
 
@@ -382,9 +352,6 @@ better (Ask for help if stumped)
 
 Once I have done that, I can then mark the conflict as fixed by using
 `git add` and `git commit`.
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Help-browser.svg/20px-Help-browser.svg.png)
-Stuck? Ask for help from the workshop staff
 
     $ git add gamow.txt
     $ git commit -m "Fixed conflict"
